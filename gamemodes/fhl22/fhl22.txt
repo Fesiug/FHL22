@@ -1,0 +1,11 @@
+"fhl22"
+{
+	"base"		"base"
+	"title"		"fhl22"
+	"maps"		"^d1_|^d2_|^d3_"
+	"category"	"other"
+	"menusystem"	"1"
+	"settings"
+	{
+	}
+}
