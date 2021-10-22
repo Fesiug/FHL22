@@ -112,7 +112,7 @@ function SWEP:ThrowGrenade()
 	end
 	self:SetReloadingState(false)
 
-	do
+	if SERVER then
 		local ply = self:GetOwner()
 		local wow = ents.Create("npc_grenade_frag")
 		wow:SetParent(ply)

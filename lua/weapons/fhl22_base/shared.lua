@@ -4,6 +4,7 @@ SWEP.FHL22					= true
 SWEP.Base					= "weapon_base"
 SWEP.BobScale				= 0
 SWEP.SwayScale				= 0
+SWEP.UseHands				= true
 
 function Range( m, a )
 	return { min = m, max = a }
@@ -110,8 +111,9 @@ function SWEP:Deploy()
 
 	if self.qa["draw"] then
 		local playa = self:SendAnim( self.qa["draw"] )
-		self:SetReloadDelay( CurTime() + playa[1] )
+		--self:SetReloadDelay( CurTime() + playa[1] )
 	end
+	self:SetReloadDelay( CurTime() + 0.5 )
 
 	return true
 end
